@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inside Text</title>
+</head>
+<body>
+    <h3>Canvas basic shap with inside Text</h3>
+    <canvas id='mycanvas' width="300" height="200" style="border: 2px solid red;"></canvas>
+    <script>
+        var canvas = document.getElementById('mycanvas')
+
+        // filltext-----simple text
+        // var ctx = canvas.getContext('2d');
+        // ctx.font='30px arial';
+        // ctx.fillText('Hello',10,50)
+
+        // stroke text-----blanck text
+        // var ctx = canvas.getContext('2d');
+        // ctx.font='30px arial';
+        // ctx.strokeText('Hello',10,50)
+
+        // filltext-----simple text and some other properties
+        var ctx = canvas.getContext('2d');
+        ctx.font='30px arial';
+        ctx.fillStyle='red';
+        ctx.textAlign = 'center';
+        ctx.fillText('Hello',canvas.width/2,canvas.height/2)
+
+        
+    </script>
+    
+</body>
+</html>

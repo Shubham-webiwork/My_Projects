@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas basic shap</title>
+</head>
+<body>
+    <canvas id='mycanvas' width="300" height="200" style="border: 2px solid red;"></canvas>
+    <script>
+        var canvas = document.getElementById('mycanvas')
+
+        // red tringle------>
+        // var ctx = canvas.getContext('2d')
+        // ctx.fillStyle='green'
+        // ctx.fillRect(0,0,190,95)
+
+        // line drow------------->
+        // var ctx = canvas.getContext('2d')
+        // ctx.moveTo(0,0)
+        // ctx.lineTo(300,200)
+        // ctx.stroke()
+
+        // curcul 
+        var ctx = canvas.getContext('2d')
+        ctx.beginPath();
+        // ctx.arc(95,50,40,0,15);
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+
+        
+    </script>
+    
+</body>
+</html>
